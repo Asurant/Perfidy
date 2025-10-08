@@ -21,7 +21,7 @@ label start:
     # images directory to show it.
 
     scene bg room
-
+    with None
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
@@ -31,35 +31,39 @@ label start:
     gail "Ace where are you???"
 
     hide eileen happy
-
     with dissolve
 
+    jump test
+
+
+
+
+label test:
     show bush
+    with dissolve
 
     ace "Look Gail. I'm a bush now"
 
-    # These display lines of dialogue.
+    jump menuTest
 
-    ace "Test"
+label menuTest:
+    menu:
+        "Right":
+            jump rightTest
+        "Left":
+            jump leftTest
+        "Leave":
+            jump end
 
-    cynthia "Test"
+label rightTest:
+    show bush at right
+    ace "Look Gail. I'm on the right now"
+    jump menuTest
 
-    gail "Test"
-
-    vincent "Test"
-
-    dantes "Test"
-
-    karen "Test"
-
-    russel "Test"
-
-    christian "Test"
-
-    jump end
-
-
-
+label leftTest:
+    show bush at left
+    ace "Look Gail. I'm on the left now"
+    jump menuTest
 
 label end:
     return
