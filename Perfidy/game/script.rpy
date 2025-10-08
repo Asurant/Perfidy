@@ -3,8 +3,14 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define ace = Character("Ace Wright")
+define cynthia = Character("Cynthia Carver")
+define gail = Character("Gail Mourne")
+define vincent = Character("Vincent Earl Holmes")
+define dantes = Character("Dantes Medici")
+define karen = Character("Karen Medici")
+define russel = Character("Russel Smith")
+define christian = Character("Christian Caller")
 
 # The game starts here.
 
@@ -22,12 +28,38 @@ label start:
 
     show eileen happy
 
+    gail "Ace where are you???"
+
+    hide eileen happy
+
+    with dissolve
+
+    show bush
+
+    ace "Look Gail. I'm a bush now"
+
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    ace "Test"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    cynthia "Test"
 
-    # This ends the game.
+    gail "Test"
 
+    vincent "Test"
+
+    dantes "Test"
+
+    karen "Test"
+
+    russel "Test"
+
+    christian "Test"
+
+    jump end
+
+
+
+
+label end:
     return
