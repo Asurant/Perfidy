@@ -1,118 +1,40 @@
-2025-10-09 12:15:08 UTC
+2025-10-29 01:21:51 UTC
 Windows-11-10.0.22631-SP0
 Ren'Py 8.4.1.25072401
 
-Early init took 45 ms
-Loading error handling took 21 ms
-Loading script took 146 ms
-Loading save slot metadata took 40 ms
+Early init took 90 ms
+Loading error handling took 33 ms
+Loading script took 349 ms
+Loading save slot metadata took 176 ms
 Loading persistent took 0 ms
-Running init code took 43 ms
-Loading analysis data took 7 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
-Dump and make backups took 41 ms
-Cleaning cache took 0 ms
-Making clean stores took 1 ms
-Initial gc took 27 ms
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 2 ms
-Init translation took 1 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 7 ms
-Save screen analysis took 11 ms
-Save pyanalysis took 0 ms
-Save bytecode took 18 ms
-Running _start took 1 ms
-Interface start took 1140 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) UHD Graphics'
-Version: '4.6.0 - Build 31.0.101.5382'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1731, 974) drawable=(1731, 974)
-Maximum texture size: 4096x4096
+  - Init at game/gui.rpy:11 took 688 ms.  - Init at renpy/common/00library.rpy:456 took 251 ms.RRunning init code took 1020 msLoading analysis data took 66 ms
+Analyze and compile ATL took 4 ms
+Reloading save slot metadata took 436 ms
 
 Full traceback:
-  File "game/script.rpy", line 36, in script
-    show bush right
-  File "renpy/ast.py", line 1357, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 730, in show_imspec
-    renpy.config.show(
-    ~~~~~~~~~~~~~~~~~^
-        name, at_list=at_list, layer=layer, what=expression, zorder=zorder, tag=tag, behind=behind, atl=atl
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "renpy/exports/displayexports.py", line 486, in show
-    if not base.find_target() and renpy.config.missing_show:
-           ~~~~~~~~~~~~~~~~^^                               
-  File "renpy/display/image.py", line 444, in find_target
-    self.target = target._duplicate(a)
-                  ~~~~~~~~~~~~~~~~~^^^
-  File "renpy/display/displayable.py", line 253, in _duplicate
-    args.extraneous()
+  File "renpy/bootstrap.py", line 376, in bootstrap
+    renpy.main.main()
     ~~~~~~~~~~~~~~~^^
-  File "renpy/display/displayable.py", line 110, in extraneous
-    raise Exception(
-    ...<4 lines>...
-    )
-Exception: Image 'bush' does not accept attributes 'right'.
+  File "renpy/main.py", line 555, in main
+    renpy.dump.dump(False)
+    ~~~~~~~~~~~~~~~^^^^^^^
+  File "renpy/dump.py", line 247, in dump
+    with open(new, "w") as f:
+         ~~~~^^^^^^^^^^      
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\5927010274\\Perfidy\\Perfidy\\Perfidy\\game\\saves\\navigation.json.new'
 
-While running game code:
-  File "game/script.rpy", line 36, in script
-    show bush right
-Exception: Image 'bush' does not accept attributes 'right'.
-Resetting cache.
-Early init took 4 ms
-Loading error handling took 13 ms
-Loading script took 71 ms
-Loading save slot metadata took 18 ms
-Loading persistent took 0 ms
-Running init code took 18 ms
-Loading analysis data took 5 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 8 ms
-Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
-Dump and make backups took 24 ms
-Cleaning cache took 0 ms
-Making clean stores took 1 ms
-Initial gc took 27 ms
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 1 ms
-Analyze screens took 5 ms
-Save screen analysis took 7 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 470 ms
+After initialization, but before game start.
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\5927010274\\Perfidy\\Perfidy\\Perfidy\\gameInterface start took 1221 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
+VVendor: 'Intel'
 Renderer: 'Intel(R) UHD Graphics'
 Version: '4.6.0 - Build 31.0.101.5382'
 Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1731, 974) drawable=(1731, 974)
-Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1731, 974) drawable=(1731, 974)
-Maximum texture size: 4096x4096
+
