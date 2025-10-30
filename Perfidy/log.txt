@@ -1,40 +1,158 @@
-2025-10-29 01:21:51 UTC
+2025-10-30 01:59:18 UTC
 Windows-11-10.0.22631-SP0
 Ren'Py 8.4.1.25072401
 
-Early init took 90 ms
-Loading error handling took 33 ms
-Loading script took 349 ms
-Loading save slot metadata took 176 ms
+Early init took 65 ms
+Loading error handling took 37 ms
+Loading script took 497 ms
+Loading save slot metadata took 84 ms
 Loading persistent took 0 ms
-  - Init at game/gui.rpy:11 took 688 ms.  - Init at renpy/common/00library.rpy:456 took 251 ms.RRunning init code took 1020 msLoading analysis data took 66 ms
-Analyze and compile ATL took 4 ms
-Reloading save slot metadata took 436 ms
-
-Full traceback:
-  File "renpy/bootstrap.py", line 376, in bootstrap
-    renpy.main.main()
-    ~~~~~~~~~~~~~~~^^
-  File "renpy/main.py", line 555, in main
-    renpy.dump.dump(False)
-    ~~~~~~~~~~~~~~~^^^^^^^
-  File "renpy/dump.py", line 247, in dump
-    with open(new, "w") as f:
-         ~~~~^^^^^^^^^^      
-PermissionError: [Errno 13] Permission denied: 'C:\\Users\\5927010274\\Perfidy\\Perfidy\\Perfidy\\game\\saves\\navigation.json.new'
-
-After initialization, but before game start.
-PermissionError: [Errno 13] Permission denied: 'C:\\Users\\5927010274\\Perfidy\\Perfidy\\Perfidy\\gameInterface start took 1221 ms
+Running init code took 93 ms
+Loading analysis data took 18 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 14 ms
+Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
+Dump and make backups took 49 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 41 ms
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 5 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 8 ms
+Save screen analysis took 20 ms
+Save pyanalysis took 0 ms
+Save bytecode took 46 ms
+Running _start took 0 ms
+Interface start took 308 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-VVendor: 'Intel'
+Vendor: 'Intel'
 Renderer: 'Intel(R) UHD Graphics'
 Version: '4.6.0 - Build 31.0.101.5382'
 Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
 Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, Resetting cache.
+Early init took 9 ms
+Loading error handling took 24 ms
+Loading script took 306 ms
+Loading save slot metadata took 39 ms
+Loading persistent took 0 ms
+Running init code took 47 ms
+Loading analysis data took 4 ms
+Analyze and compile ATL took 2 ms
+Reloading save slot metadata took 19 ms
+Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
+Dump and make backups took 39 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 45 ms
+DPI scale factor: 1.500000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 2 ms
+Analyze screens took 7 ms
+Save screen analysis took 11 ms
+Save pyanalysis took 4 ms
+Save bytecode took 2 ms
+Running _start took 1 ms
+Interface start took 1192 ms
 
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 10 ms
+Loading error handling took 16 ms
+Loading script took 268 ms
+Loading save slot metadata took 33 ms
+Loading persistent took 0 ms
+Running init code took 39 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 18 ms
+Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
+Dump and make backups took 58 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 59 ms
+DPI scale factor: 1.500000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 19 ms
+Save screen analysis took 14 ms
+Save pyanalysis took 1 ms
+Save bytecode took 1 ms
+Running _start took 1 ms
+Interface start took 653 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 7 ms
+Loading error handling took 15 ms
+Loading script took 243 ms
+Loading save slot metadata took 56 ms
+Loading persistent took 1 ms
+Running init code took 49 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 21 ms
+Dump and make backups took 43 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 54 ms
+DPI scale factor: 1.500000
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 16 ms
+Analyze screens took 2 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 1 ms
+Interface start took 694 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
