@@ -19,17 +19,20 @@ define ace = Character("Ace Wright", image = 'ace1', callback = name_callback, c
 define cynthia = Character("Cynthia Carver", image = 'cynthia1', callback = name_callback, cb_name = 'cynthia')
 define gail = Character("Gail Mourne", image = 'gail1', callback = name_callback, cb_name = 'gail')
 define vincent = Character("Vincent Earl Holmes", image = 'vincent1', callback = name_callback, cb_name = 'vincent')
-define dantes = Character("Dantes Medici")
-define karen = Character("Karen Medici")
-define russel = Character("Russel Smith")
-define christian = Character("Christian Caller")
+define dantes = Character("Dantes Medici", image = "bush", callback = name_callback, cb_name = 'vincent')
+define unknownDantes = Character("...", image = "bush", callback = name_callback, cb_name = 'unknownDantes')
+
+default honestyKarma = 0
+default silentArrestKarma = 0
+default perfidyKarma = 0
+default stalkerKarma = 0
+default temp = 0
+default gailLeaveDantesScene = False
 
 # The game starts here.
 
 label start:
     scene bg room
-    cynthia "To be honest, I don’t specifically remember. She went in to buy a cut, as this is a barber’s shop, and I sold it. I think she complained about there being too much fat? It blended together. I was trying to diffuse it, but she wasn’t listening, and was saying all this horrible stuff. I would be lying if I said I wasn’t a bit relieved."
-
     jump karenDeathRevealed
 
 label karenDeathRevealed:
@@ -43,11 +46,12 @@ label karenDeathRevealed:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show i_gail at left
-
-    gail "Karen’s dead."
+    show i_gail at left:
+        xzoom -1.0
 
     show i_ace at right
+
+    gail "Karen’s dead."
 
     ace "Karen? Karen Medici? Daughter of Mr. Medici?"
     ace "That’s a bit bold, isn’t it, Gail."
@@ -70,9 +74,9 @@ label karenDeathRevealed:
             gail "I’ve mentioned this before."
             ace "Apologies. I’m just a bit absentminded right now."
         "Can’t say I disagree":
-            scene bg room
+            $ temp = 0
         "Remain Silent":
-            scene bg room
+            $ temp = 0
     
     gail "Anyways, you're certain that this ‘alleged serial killer’ is the same for all three of these murders?     It feels a bit irresponsible to come to a conclusion so quickly."
 
@@ -99,7 +103,7 @@ label karenDeathRevealed:
 
     menu:
         "Vincent found the body?":
-            scene bg room
+            $ temp = 0
 
         "Who?":
 
@@ -144,36 +148,43 @@ label karenDeathRevealed:
 
                     ace "So just to clarify, Ms. Medici’s our deceased, and was discovered by Mr. Holmes?"
 
-                    gail "Yeah. Found in a dumpster. The body was still fairly fresh, so it couldn’t have been there for long. I’d guess about 24 hours, if that."
+    gail "Yeah. Found in a dumpster. The body was still fairly fresh, so it couldn’t have been there for long. I’d guess about 24 hours, if that."
 
-                    ace "Any other important details I should note?"
+    ace "Any other important details I should note?"
 
-                    gail "Not that I know of. I’m not exactly omniscient."
+    gail "Not that I know of. I’m not exactly omniscient."
 
-                    ace "So I suppose now we have to investigate."
+    ace "So I suppose now we have to investigate."
 
-                    gail "That is typically what happens in an investigation. Besides, what are you asking me for? You technically have higher authority than I do."
+    gail "That is typically what happens in an investigation. Besides, what are you asking me for? You technically have higher authority than I do."
 
-                    ace "Technically."
+    ace "Technically."
 
-                    gail "Anyways, our main and only lead at this moment would be Vincent."
+    gail "Anyways, our main and only lead at this moment would be Vincent."
 
-                    menu:
-                        "And you say I technically have higher authority. Seems like you’re the one calling the shots.":
+    menu:
+        "And you say I technically have higher authority. Seems like you’re the one calling the shots.":
 
-                            gail "That technically is very important."
+            gail "That technically is very important."
 
-                            ace "So, Ms. technically-not-my-boss, we heading off to investigate our lead?"
+            ace "So, Ms. technically-not-my-boss, we heading off to investigate our lead?"
 
-                            gail "Roger that, Mr. technically-my-boss."
+            gail "Roger that, Mr. technically-my-boss."
 
-                            ace "Well what are we waiting for?"
-                            jump confrontingVincent1
-                        "Well what are we waiting for?":
-                            jump confrontingVincent1
+            ace "Well what are we waiting for?"
+            jump confrontingVincent1
+        "Well what are we waiting for?":
+            jump confrontingVincent1
     jump confrontingVincent1
 
 label confrontingVincent1:
+    show i_gail:
+        xalign 0.75
+        yalign 0.97
+    show i_ace:
+        xalign 1.2
+        yalign 0.97
+    show i_vincent at left
     gail "Are you Vincent Earl Holmes?"
 
     vincent "Yeah."
@@ -305,7 +316,6 @@ label confrontingVincent1:
 
 
         "Isn’t it a bit too much of a coincidence that you of all people just so happened to come across the body?":
-
             vincent "What are you talking about?"
 
             ace "Bit of a coincidence that it was Karen Medici’s body, specifically."
@@ -343,6 +353,7 @@ label confrontingVincent1:
                             menu:
                                 #Cynthia Accuse Path Open
                                 "I suppose as much.":
+                                    $ silentArrestKarma += 1
 
                                     vincent "‘Course it is. "
 
@@ -644,6 +655,14 @@ label confrontingVincent1:
     jump discussionOfLove
 
 label discussionOfLove:
+    show i_gail:
+        xalign 0.75
+        yalign 0.97
+    show i_ace:
+        xalign 1.2
+        yalign 0.97
+    show cynthia at left
+
     ace "You doing alright?"
 
     gail "I don’t know…"
@@ -692,7 +711,7 @@ label discussionOfLove:
             jump interrogatingCynthia1
         #Murder Points +1
         "It’ll happen how it happens. If Cynthia’s guilty, she’d be arrested.":
-
+            $ perfidyKarma += 1
             gail "But she isn’t and I know it!"
 
             ace "Do you? Happen to know any secret information you’d like to share?"
@@ -862,7 +881,7 @@ label interrogatingCynthia1:
 
                     jump droppingCynthia
                 #Prequisite of being mean to Vincent
-                "Has he been around more often?":
+                "Has he been around more often?" if silentArrestKarma > 0:
                     cynthia "Now that you mention it… yeah."
 
                     gail "How long has he been around more for? "
@@ -904,6 +923,7 @@ label interrogatingCynthia1:
                             jump droppingCynthia
         #Mean option
         "Do you know Russel Smith or Christian Caller?":
+            $ silentArrestKarma += 1
             cynthia "…Why do you ask?"
 
             gail "Ignore him, he’s just theorizing."
@@ -958,7 +978,7 @@ label interrogatingCynthia1:
                                 "I need to prioritize my job first. ":
                                     gail "Yeah. Of course you do. Because caring about people would be too much."
                                 "...":
-                                    scene bg room
+                                    $ temp = 0
                             cynthia "Look, it doesn’t matter, okay? I’ll answer whatever questions you need to ask, just let it go. Please. I don’t want to be stuck between the two of you fighting. "
 
                             ace "Fine. "
@@ -985,7 +1005,7 @@ label interrogatingCynthia1:
                             cynthia "See you."
                             jump droppingCynthia
         #Prequisite of being mean to Vincent
-        "That’s funny, because I seem to recall Mr. Holmes implying otherwise.":
+        "That’s funny, because I seem to recall Mr. Holmes implying otherwise." if silentArrestKarma > 0:
             gail " Oh, so we’re listening to the crackpot now? "
 
             ace " And out of Vincent and you, which of you lied to me about what they knew? Maybe you were just trying to get me to devalue his argument!"
@@ -1143,6 +1163,11 @@ label interrogatingCynthia1:
     jump droppingCynthia
     
 label droppingCynthia:
+    show i_gail at left:
+        xzoom -1.0
+
+    show i_ace at right
+
     gail "…"
 
     ace "It seems like you want to talk, so spit it out. "
@@ -1204,6 +1229,7 @@ label droppingCynthia:
                             gail "I can’t deal with this right now. "
                             jump dauntingDantes
                         "Quit deflecting! Why would I care about your girlfriend anyways?":
+                            $ gailLeaveDantesScene = True
                             gail "Don’t give me that shit! You’ve known me since we were kids, you don’t get to act like it was all just a farce."
                             gail "Sometimes you really are unbelievable."
 
@@ -1217,6 +1243,28 @@ label droppingCynthia:
     jump dauntingDantes
 
 label dauntingDantes:
+    unknownDantes "Good evening. "
+
+    ace "You as well."
+
+    if gailLeaveDantesScene:
+        unknownDantes "Was that your lover who just stormed out? She seemed to be in quite a fit of pique."
+    else:
+        unknownDantes "Was that your lover who left just now? "
+
+    ace "Was that… what? No, Gail’s my partner. Wait, who are you?"
+
+
+    unknownDantes "Pity, she seemed like a bit of a catch, though temperamental. "
+    unknownDantes "Have I not introduced myself yet? My apologies, I’m not used to needing to do so. I’m Dantes Medici. But please, call me Dantes. "
+
+    ace "You’re Ms. Medici’s father… I’m sorry for your loss. "
+
+    dantes "Thank you. "
+    dantes "To be quite honest, it still doesn’t feel real yet. Like I’ll turn and see her standing there, and nothing will have changed at all. That she’ll be admiring outfits through streetview windows, or talking about her day. That she’s just on the precipice of being dead…"
+    dantes "Forgive this old man. I’m far too sentimental these days. Especially now considering…"
+
+
     jump test
 
 

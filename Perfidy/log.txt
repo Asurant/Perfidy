@@ -1,71 +1,24 @@
-2025-10-30 01:59:18 UTC
+2025-10-31 01:48:56 UTC
 Windows-11-10.0.22631-SP0
 Ren'Py 8.4.1.25072401
 
-Early init took 65 ms
-Loading error handling took 37 ms
-Loading script took 497 ms
-Loading save slot metadata took 84 ms
+Early init took 52 ms
+Loading error handling took 232 ms
+Loading script took 5309 ms
+Loading save slot metadata took 584 ms
 Loading persistent took 0 ms
-Running init code took 93 ms
-Loading analysis data took 18 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 14 ms
-Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
-Dump and make backups took 49 ms
-Cleaning cache took 0 ms
-Making clean stores took 1 ms
-Initial gc took 41 ms
+
+File "game/script.rpy", line 49: end of line expected.
+    unknownDantes "Have I not introduced myself yet? My apologies, I’m not used to needing to do so. I’m Dantes Medici. But please, call me Dantes. ""
+                                                                                                                                                 ^
+
+File "game/script.rpy", line 1279: end of line expected.
+    unknownDantes "Have I not introduced myself yet? My apologies, I’m not used to needing to do so. I’m Dantes Medici. But please, call me Dantes. ""
+                                                                                                                                                 ^
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 5 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 1 ms
-Analyze screens took 8 ms
-Save screen analysis took 20 ms
-Save pyanalysis took 0 ms
-Save bytecode took 46 ms
-Running _start took 0 ms
-Interface start took 308 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) UHD Graphics'
-Version: '4.6.0 - Build 31.0.101.5382'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, Resetting cache.
-Early init took 9 ms
-Loading error handling took 24 ms
-Loading script took 306 ms
-Loading save slot metadata took 39 ms
-Loading persistent took 0 ms
-Running init code took 47 ms
-Loading analysis data took 4 ms
-Analyze and compile ATL took 2 ms
-Reloading save slot metadata took 19 ms
-Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
-Dump and make backups took 39 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 45 ms
-DPI scale factor: 1.500000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 2 ms
-Analyze screens took 7 ms
-Save screen analysis took 11 ms
-Save pyanalysis took 4 ms
-Save bytecode took 2 ms
-Running _start took 1 ms
-Interface start took 1192 ms
+Interface start took 1035 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -80,31 +33,288 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 10 ms
+Early init took 4 ms
 Loading error handling took 16 ms
-Loading script took 268 ms
-Loading save slot metadata took 33 ms
+Loading script took 83 ms
+Loading save slot metadata took 20 ms
 Loading persistent took 0 ms
-Running init code took 39 ms
-Loading analysis data took 3 ms
+
+File "game/script.rpy", line 51: end of line expected.
+    ace "You’re Ms. Medici’s father… I’m sorry for your loss.
+                                                                    ^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 381 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 5 ms
+Loading error handling took 17 ms
+Loading script took 96 ms
+Loading save slot metadata took 20 ms
+Loading persistent took 0 ms
+
+File "game/script.rpy", line 51: end of line expected.
+    ace "You’re Ms. Medici’s father… I’m sorry for your loss.
+                                                                    ^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 385 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4 ms
+Loading error handling took 16 ms
+Loading script took 178 ms
+Loading save slot metadata took 19 ms
+Loading persistent took 0 ms
+
+File "game/script.rpy", line 23: invalid syntax. Perhaps you forgot a comma?
+    Character("...", image "bush", callback - name_callback cb_name = 'unknownDantes')
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 400 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4 ms
+Loading error handling took 16 ms
+Loading script took 170 ms
+Loading save slot metadata took 30 ms
+Loading persistent took 0 ms
+
+File "game/script.rpy", line 23: invalid syntax
+    Character("...", image "bush", callback - name_callback, cb_name = 'unknownDantes')
+                           ^^^^^^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 382 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4 ms
+Loading error handling took 20 ms
+Loading script took 85 ms
+Loading save slot metadata took 20 ms
+Loading persistent took 0 ms
+
+File "game/script.rpy", line 23: invalid syntax
+    Character("...", image "bush", callback - name_callback, cb_name = 'unknownDantes')
+                           ^^^^^^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 399 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4 ms
+Loading error handling took 16 ms
+Loading script took 73 ms
+Loading save slot metadata took 20 ms
+Loading persistent took 0 ms
+
+File "game/script.rpy", line 23: invalid syntax
+    Character("...", image "bush", callback - name_callback, cb_name = 'unknownDantes')
+                           ^^^^^^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 389 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4 ms
+Loading error handling took 18 ms
+Loading script took 83 ms
+Loading save slot metadata took 22 ms
+Loading persistent took 0 ms
+
+File "game/script.rpy", line 23: invalid syntax
+    Character("...", image "bush", callback - name_callback, cb_name = 'unknownDantes')
+                           ^^^^^^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 407 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 5 ms
+Loading error handling took 16 ms
+Loading script took 78 ms
+Loading save slot metadata took 20 ms
+Loading persistent took 0 ms
+
+File "game/script.rpy", line 23: invalid syntax
+    Character("...", image "bush", callback - name_callback, cb_name = 'unknownDantes')
+                           ^^^^^^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 403 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 5 ms
+Loading error handling took 14 ms
+Loading script took 186 ms
+Loading save slot metadata took 21 ms
+Loading persistent took 0 ms
+Running init code took 323 ms
+Loading analysis data took 12 ms
 Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 18 ms
+Reloading save slot metadata took 139 ms
 Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
-Dump and make backups took 58 ms
+Dump and make backups took 29 ms
+Cleaning cache took 1 ms
+Making clean stores took 0 ms
+Initial gc took 28 ms
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 8 ms
+Analyze screens took 5 ms
+Save screen analysis took 11 ms
+Save pyanalysis took 3 ms
+Save bytecode took 3 ms
+Running _start took 1 ms
+Interface start took 517 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics'
+Version: '4.6.0 - Build 31.0.101.5382'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 5 ms
+Loading error handling took 11 ms
+Loading script took 194 ms
+Loading save slot metadata took 24 ms
+Loading persistent took 0 ms
+Running init code took 25 ms
+Loading analysis data took 2 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 12 ms
+Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
+Dump and make backups took 29 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 59 ms
+Initial gc took 39 ms
 DPI scale factor: 1.500000
-Creating interface object took 1 ms
+Creating interface object took 0 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
 Load screen analysis took 1 ms
-Analyze screens took 19 ms
-Save screen analysis took 14 ms
-Save pyanalysis took 1 ms
+Analyze screens took 6 ms
+Save screen analysis took 10 ms
+Save pyanalysis took 4 ms
 Save bytecode took 1 ms
 Running _start took 1 ms
-Interface start took 653 ms
+Interface start took 503 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -119,30 +329,31 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 974) drawable=(1920, 974)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 7 ms
-Loading error handling took 15 ms
-Loading script took 243 ms
-Loading save slot metadata took 56 ms
-Loading persistent took 1 ms
-Running init code took 49 ms
+Early init took 5 ms
+Loading error handling took 11 ms
+Loading script took 254 ms
+Loading save slot metadata took 26 ms
+Loading persistent took 0 ms
+Running init code took 28 ms
 Loading analysis data took 3 ms
 Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 21 ms
-Dump and make backups took 43 ms
+Reloading save slot metadata took 11 ms
+Backing up script files to 'C:\\Users\\5927010274\\AppData\\Roaming/RenPy/backups\\Perfidy':
+Dump and make backups took 30 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 54 ms
+Initial gc took 43 ms
 DPI scale factor: 1.500000
 Creating interface object took 0 ms
-Init translation took 0 ms
+Init translation took 1 ms
 Cleaning stores took 0 ms
-Load screen analysis took 16 ms
-Analyze screens took 2 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 7 ms
+Save screen analysis took 8 ms
+Save pyanalysis took 5 ms
+Save bytecode took 2 ms
 Running _start took 1 ms
-Interface start took 694 ms
+Interface start took 502 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
